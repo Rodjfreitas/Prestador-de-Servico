@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+h1{
+  letter-spacing: 5px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0px 5px;
+  
+}
+
+p{
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav{
+  background-color: rgba(128, 128, 128, 0.062);
+  height: 60px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  
+}
+
+nav li{
+  list-style: none;
+  font-size: 20px;
+  padding: 5px 15px;
+
+}
+
+nav li:hover{
+  cursor: pointer;
+  border: 0.5px solid gray;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: gray;
+}
+
+#principal{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#principal div{
+  height: 210px;
+  margin: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+  background-position: center;
+  
+}
+
+#principal div:hover{
+  cursor: pointer;
+}
+
+
+#formulario{
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px 40px;
+}
+
+#formulario div{
+  padding: 10px;
+}
+
+#formulario p{
+  margin: 10px 0px;
+}
+
+#amount,#days{
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 18px;
+  
+}
+
+.btn{
+  padding: 5px 10px;
+}
+
+output{
+  font-size: 18px;
+}

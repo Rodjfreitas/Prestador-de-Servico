@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+  <title>Prestador de Serviços</title>
+  <style>
+    header{
+      background-image: url(imagem/servicos.gif);      
+    }
+
+    #valorDia{
+      background-image: url(imagem/rs-dia-Image.png); 
+      
+    }
+    #fgts{
+      background-image: url(imagem/fgtsImage.png); 
+     
+    }
+    #inss{
+      background-image: url(imagem/inssImage.png); 
+      
+    }
+    #completo{
+      background-image: url(imagem/rs-dia-Image.png); 
+      
+    }
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prestador de Serviço</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>R$/dia</li>
+      <li>FGTS</li>
+      <li>INSS</li>
+      <li>Completo</li>
+    </ul>
+  </nav>
+  <section id="principal">
+    <div onmouseenter="valorEnter()" onmouseout="exitSelect()" id="valorDia"></div>
+    <div onmouseenter="fgtsEnter()" onmouseout="exitSelect()" id="fgts"></div>
+    <div onmouseenter="inssEnter()" onmouseout="exitSelect()" id="inss"></div>
+    <div onmouseenter="completoEnter()" onmouseout="exitSelect()" id="completo"></div>
+  </section>
+
+  <div id="formulario">
+    <div id="calc-rs-dia">
+      <h1>Calculo de Renda por dia</h1>
+      <hr>
+      <p>O conceito deste calculo é você identificar qual valor cobrar pelo dia trabalhado, já descontados os tributos da sua atividade.</p>
+      <p>Consideração a tributação de 8% referente ao Imposto de Renda anual da atividade.</p>
+      <p>Informe o valor que deseja receber diariamente pelo serviço:
+        <input type="number" id="amount">
+      </p>
+      <p>Informe a quantidade de dias de trabalho:
+        <input type="number" id="days">
+      </p>
+      <p>
+        <input type="button" value="Verificar" class="btn" onclick="calcAmount()">
+        <input type="button" value="Limpar" class="btn" onclick="clearAmount()">
+      </p>
+      <p>Valor do imposto/dia:
+        <output class="taxAmount"></output>
+      </p>
+      <p>Valor à cobrar/dia:
+        <output class="saleAmount"></output>
+      </p>
+      <p>Valor do imposto total:
+        <output class="taxTotal"></output>
+      </p>
+      <p>Valor à cobrar total:
+        <output class="saleTotal"></output>
+      </p>
+    </div>
+
+    
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
