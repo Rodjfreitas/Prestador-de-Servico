@@ -55,7 +55,7 @@ nav li:hover{
 }
 
 #principal{
-  display: none;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
@@ -66,6 +66,10 @@ nav li:hover{
   border-radius: 15px;
   object-fit: cover;
   background-position: center;
+  transition-duration: 0.8s;
+  transform: skewX();
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
   
 }
 
@@ -82,13 +86,14 @@ nav li:hover{
 
 #formulario div{
   padding: 10px;
+
 }
 
 #formulario p{
   margin: 10px 0px;
 }
 
-#amount,#days{
+#amount,#days,#salario{
   padding: 0px 10px;
   text-align: center;
   font-size: 18px;
@@ -97,6 +102,10 @@ nav li:hover{
 
 .btn{
   padding: 5px 10px;
+}
+
+.btn:hover{
+  cursor: pointer;
 }
 
 output{

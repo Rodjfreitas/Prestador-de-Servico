@@ -101,3 +101,62 @@ function clearAmount(){
   taxTotal.innerText = ""
   saleTotal.innerText = ""
 }
+
+function calcInss(){
+  let salario = document.querySelector('#salario')
+  let taxInss = document.querySelector('.taxInss')
+  let amountInss = document.querySelector('.amountInss')
+  let faixas = [1302, 2571.29, 3856.94, 7507.49]
+  let faixa1;
+  let faixa2;
+  let faixa3;
+  let faixa4;
+  let total;
+
+  if(salario.value.length = 0){
+    alert('[ERRO]: Preencha um valor para salário.')
+  }else{
+    if(salario.value <= faixas[0]){
+      taxInss.innerText = "7,5 %"
+      faixa1 = `${Number(faixas[0] * 0.075)}`
+      amountInss.innerText = `R$ ${Number(faixa1).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[1]){
+      taxInss.innerText = "9 %"
+      faixa1 = `${Number(faixas[0] * 0.075)}`
+      faixa2 = `${Number((salario.value - faixas[1])* 0.09)}`
+      console.log(faixa2)
+      total = faixa1 + faixa2
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[2]){
+      taxInss.innerText = "12 %"
+      faixa1 = `${Number(faixas[0] * 0.075)}`
+      faixa2 = `${Number((salario.value - faixas[1])* 0.09)}`
+      faixa3 = `${Number((salario.value - faixas[2])* 0.12)}`
+      total = faixa1 + faixa2 + faixa3
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[3]){
+      taxInss.innerText = "14 %"
+      faixa1 = `${Number(faixas[0] * 0.075)}`
+      faixa2 = `${Number((salario.value - faixas[1])* 0.09)}`
+      faixa3 = `${Number((salario.value - faixas[2])* 0.12)}`
+      faixa4 = `${Number((salario.value - faixas[3])* 0.14)}`
+      total = faixa1 + faixa2 + faixa3 + faixa4
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }
+  }
+}
+
+
+function clearInss(){
+  let salario = document.querySelector('#salario')
+  let taxInss = document.querySelector('.taxInss')
+  let amountInss = document.querySelector('.amountInss')
+
+  salario.innerText = ""
+  taxInss.innerText = ""
+  amountInss.innerText = ""
+  salario.focus()
+}
