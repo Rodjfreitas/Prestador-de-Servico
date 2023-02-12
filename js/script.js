@@ -3,11 +3,15 @@ function valorEnter(){
   let fgts = document.querySelector('#fgts')
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
+  let information = document.querySelector('.information')
 
   fgts.style.opacity = "10%"
   inss.style.opacity = "10%"
   completo.style.opacity = "10%"
-  
+  information.style.display = "block"
+  information.style.width = "200px"
+  information.style.transitionDuration = "3s"
+  information.style.transform = "matrix()"
 }
 
 function fgtsEnter(){
@@ -48,11 +52,15 @@ function exitSelect(){
   let fgts = document.querySelector('#fgts')
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
+  let information = document.querySelector('.information')
 
   fgts.style.opacity = "100%"
   inss.style.opacity = "100%"
   completo.style.opacity = "100%"
   valorDia.style.opacity = "100%"
+
+  
+  information.style.display = "none"
   
 }
 

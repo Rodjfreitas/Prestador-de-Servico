@@ -60,7 +60,7 @@ nav li:hover{
   gap: 10px;
 }
 
-#principal div{
+#valorDia,#fgts,#inss,#completo{
   height: 210px;
   margin: 50px;
   border-radius: 15px;
@@ -110,4 +110,18 @@ nav li:hover{
 
 output{
   font-size: 18px;
+}
+
+.information{
+  background-color: white;
+  width: 200px;
+  display: block;
+  height: 100%;
+  border-radius: 15px 0 0 15px; 
+
+}
+
+.information p{
+  padding: 10px;
+  font-size: 13px;
 }
