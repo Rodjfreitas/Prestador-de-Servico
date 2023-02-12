@@ -93,7 +93,7 @@ nav li:hover{
   margin: 10px 0px;
 }
 
-#amount,#days,#salario{
+#amount,#days,#salario,#salario-fgts{
   padding: 0px 10px;
   text-align: center;
   font-size: 18px;

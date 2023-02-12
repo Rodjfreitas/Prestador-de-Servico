@@ -92,10 +92,27 @@
       </p>
     </div>
 
+    <div id="calc-fgts">
+      <h1>Calculo do FGTS</h1>
+      <hr>
+      <p>O FGTS incide em 8% sobre o valor do salário do trabalhador.</p>
+      <hr>
+      <p>Informe o salário:
+        <input type="number" id="salario-fgts">
+      </p>
+      <p>
+        <input type="button" value="Verificar" class="btn" onclick="caclFgts()">
+        <input type="button" value="Limpar" class="btn" onclick="clearFgts()">
+      </p>
+      <p>Valor do FGTS:
+        <output class="amountFgts"></output>
+      </p>
+    </div>
+
     <div id="calc-inss">
       <h1>Calculo do INSS</h1>
       <hr>
-      <p>O INSS possui faixas de taxação de acordo com o salário da pessoa.</p>
+      <p>O INSS possui faixas de taxação de acordo com o salário do trabalhador.</p>
       <hr>
       <p>Informe o seu salário:
         <input type="number" id="salario">

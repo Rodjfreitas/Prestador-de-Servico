@@ -167,3 +167,23 @@ function clearInss(){
   amountInss.innerText = ""
   salario.focus()
 }
+
+function caclFgts(){
+  let fgts = document.querySelector('#salario-fgts')
+  let valor = document.querySelector('.amountFgts')
+
+  if(fgts.value.length = 0){
+    alert('[ERRO]: Necessário informar o valor do salário.')
+  }else{
+    valor.innerText = (` R$ ${Number(fgts.value * 0.08).toFixed(2)}`)
+  }
+}
+
+function clearFgts(){
+  let fgts = document.querySelector('#salario-fgts')
+  let valor = document.querySelector('.amountFgts')
+
+  fgts.value = ""
+  fgts.focus()
+  valor.innerText = ""
+}
