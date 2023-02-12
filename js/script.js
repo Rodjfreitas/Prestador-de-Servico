@@ -38,10 +38,16 @@ function inssEnter(){
   let fgts = document.querySelector('#fgts')
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
+  let information3 = document.querySelector('.information3')
+  let information3p = document.querySelector('.information3p')
 
   valorDia.style.opacity = "10%"
   fgts.style.opacity = "10%"
   completo.style.opacity = "10%"
+  information3.style.display = "block"
+  information3.style.width = "200px"
+  information3.style.transition = "width 2s ease"
+  information3p.style.display = "block"
 }
 
 function completoEnter(){
@@ -64,6 +70,8 @@ function exitSelect(){
   let informationp = document.querySelector('.informationp')
   let information2 = document.querySelector('.information2')
   let information2p = document.querySelector('.information2p')
+  let information3 = document.querySelector('.information3')
+  let information3p = document.querySelector('.information3p')
 
   fgts.style.opacity = "100%"
   inss.style.opacity = "100%"
@@ -77,6 +85,9 @@ function exitSelect(){
   information2.style.width = "0px"
   information2.style.transition = "width 3s ease"  
   information2p.style.display = "none"
+  information3.style.width = "0px"
+  information3.style.transition = "width 3s ease"  
+  information3p.style.display = "none"
   
 }
 
