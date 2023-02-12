@@ -4,14 +4,16 @@ function valorEnter(){
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
   let information = document.querySelector('.information')
+  let informationp = document.querySelector('.informationp')
 
   fgts.style.opacity = "10%"
   inss.style.opacity = "10%"
   completo.style.opacity = "10%"
   information.style.display = "block"
   information.style.width = "200px"
-  information.style.transitionDuration = "3s"
-  information.style.transform = "matrix()"
+  information.style.transition = "width 2s ease"
+  informationp.style.display = "block"
+  
 }
 
 function fgtsEnter(){
@@ -19,10 +21,16 @@ function fgtsEnter(){
   let fgts = document.querySelector('#fgts')
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
+  let information2 = document.querySelector('.information2')
+  let information2p = document.querySelector('.information2p')
 
   valorDia.style.opacity = "10%"
   inss.style.opacity = "10%"
   completo.style.opacity = "10%"
+  information2.style.display = "block"
+  information2.style.width = "200px"
+  information2.style.transition = "width 2s ease"
+  information2p.style.display = "block"
 }
 
 function inssEnter(){
@@ -53,6 +61,9 @@ function exitSelect(){
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
   let information = document.querySelector('.information')
+  let informationp = document.querySelector('.informationp')
+  let information2 = document.querySelector('.information2')
+  let information2p = document.querySelector('.information2p')
 
   fgts.style.opacity = "100%"
   inss.style.opacity = "100%"
@@ -60,7 +71,12 @@ function exitSelect(){
   valorDia.style.opacity = "100%"
 
   
-  information.style.display = "none"
+  information.style.width = "0px"
+  information.style.transition = "width 3s ease"  
+  informationp.style.display = "none"
+  information2.style.width = "0px"
+  information2.style.transition = "width 3s ease"  
+  information2p.style.display = "none"
   
 }
 

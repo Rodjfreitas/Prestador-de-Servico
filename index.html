@@ -51,25 +51,30 @@
       <li>R$/dia</li>
       <li>FGTS</li>
       <li>INSS</li>
-      <li>Completo</li>
+      <li>Folha pg</li>
     </ul>
   </nav>
   <section id="principal">
     <div onmouseenter="valorEnter()" onmouseout="exitSelect()" id="valorDia">
       <div class="information">
-        <p>Todo o Trabalhador gostaria de saber quanto cobrar por um determinado serviço, já deduzindo o valor exato do imposto de Renda.</p>
-        <p>Com este simulador, você pode preencher o valor líquido que gostaria de receber diariamente por um serviço, e ele calcula para você o valor bruto a cobrar do seu cliente.</p>
+        <p class="informationp">Todo o Trabalhador gostaria de saber quanto cobrar por um determinado serviço, já deduzindo o valor exato do imposto de Renda. <br>
+        Com este simulador, você pode preencher o valor líquido que gostaria de receber diariamente por um serviço, e ele calcula para você o valor bruto a cobrar do seu cliente.</p>
       </div>
     </div>
 
     <div onmouseenter="fgtsEnter()" onmouseout="exitSelect()" id="fgts">
-      <div class="information">
-        <p>A sigla FGTS significa Fundo de Garantia de Tempo de Serviço. É uma conta aberta no momento da admissão e que está vinculada ao contrato de trabalho.</p>
-        <p>Aqui você pode simular o valor a ser depositado mensalmente nesta conta, de acordo com o salário informado.</p>
+      <div class="information2">
+        <p class="information2p">A sigla FGTS significa Fundo de Garantia de Tempo de Serviço. É uma conta aberta no momento da admissão e que está vinculada ao contrato de trabalho. <br>
+        Aqui você pode simular o valor a ser depositado mensalmente nesta conta, de acordo com o salário informado.</p>
       </div>
     </div>
 
-    <div onmouseenter="inssEnter()" onmouseout="exitSelect()" id="inss"></div>
+    <div onmouseenter="inssEnter()" onmouseout="exitSelect()" id="inss">
+      <div class="information">
+        <p>A sigla INSS refere-se à Instituto Nacional de Seguro Social. Esta contribuição se refere ao fundo de aposentadoria,pensão e afastamento do trabalhador.</p>
+        <p>Aqui você pode simular o valor de dedução mensal desta contribuição, de acordo com o salário informado.</p>
+      </div>
+    </div>
 
     <div onmouseenter="completoEnter()" onmouseout="exitSelect()" id="completo"></div>
   </section>

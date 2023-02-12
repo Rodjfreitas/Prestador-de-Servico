@@ -30,6 +30,7 @@ p{
 nav{
   background-color: rgba(128, 128, 128, 0.062);
   height: 60px;
+  display: none;
 }
 
 nav ul{
@@ -112,16 +113,35 @@ output{
   font-size: 18px;
 }
 
-.information{
+.information,.information2{
   background-color: white;
-  width: 200px;
+  width: 0px;
   display: block;
   height: 100%;
   border-radius: 15px 0 0 15px; 
+  
 
 }
 
-.information p{
-  padding: 10px;
+.informationp,.information2p{
+  padding: 20px;
   font-size: 13px;
+  width: 200px;
+  display: none;
+  text-align: center;
+  
+
+}
+
+
+
+@media(max-width:799px){
+
+  #principal{
+    display: none;
+  }
+
+  nav{
+    display: block;
+  }
 }
