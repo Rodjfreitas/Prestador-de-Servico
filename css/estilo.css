@@ -123,6 +123,11 @@ output{
   font-size: 18px;
 }
 
+#cabecalho{
+  display: flex;
+  justify-content: space-between;
+}
+
 .information,.information2,
 .information3,.information4{
   background-color: white;
@@ -166,4 +171,5 @@ output{
   nav{
     display: block;
   }
+
 }

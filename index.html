@@ -48,10 +48,10 @@
   </header>
   <nav>
     <ul>
-      <li>R$/dia</li>
-      <li>FGTS</li>
-      <li>INSS</li>
-      <li>Folha pg</li>
+      <li onclick="valorShow()">R$/dia</li>
+      <li onclick="fgtsShow()">FGTS</li>
+      <li onclick="inssShow()">INSS</li>
+      <li onclick="fopagShow()">Folha pg</li>
     </ul>
   </nav>
   <section id="principal">
@@ -94,7 +94,10 @@
 
   <div id="formulario">
     <div id="calc-rs-dia">
-      <h1>Calculo de Renda por dia</h1>
+      <div id="cabecalho">
+        <h1>Calculo de Renda por dia</h1>
+        <input type="button" value="Voltar" class="btn" onclick="backShow()">
+      </div>
       <hr>
       <p>O conceito deste calculo é você identificar qual valor cobrar pelo dia trabalhado, já descontados os tributos da sua atividade.</p>
       <p>Conside a tributação de 8% referente ao Imposto de Renda anual da atividade.</p>
@@ -124,7 +127,10 @@
     </div>
 
     <div id="calc-fgts">
-      <h1>Calculo do FGTS</h1>
+      <div id="cabecalho">
+       <h1>Calculo do FGTS</h1>
+       <input type="button" value="Voltar" class="btn" onclick="backShow()">
+      </div>
       <hr>
       <p>O FGTS incide em 8% sobre o valor do salário do trabalhador.</p>
       <hr>
@@ -141,7 +147,10 @@
     </div>
 
     <div id="calc-inss">
-      <h1>Calculo do INSS</h1>
+      <div id="cabecalho">
+        <h1>Calculo do INSS</h1>
+        <input type="button" value="Voltar" class="btn" onclick="backShow()">
+      </div>
       <hr>
       <p>O INSS possui faixas de taxação de acordo com o salário do trabalhador.</p>
       <hr>
@@ -160,7 +169,12 @@
       </p>
     </div>
 
-    <div id="calc-fopag"></div>
+    <div id="calc-fopag">
+      <div id="cabecalho">
+        <h1>Calculo Folha de Pagamento</h1>
+        <input type="button" value="Voltar" class="btn" onclick="backShow()">
+      </div>
+    </div>
     
   </div>
 
