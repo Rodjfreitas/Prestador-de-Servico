@@ -55,31 +55,39 @@
     </ul>
   </nav>
   <section id="principal">
-    <div onmouseenter="valorEnter()" onmouseout="exitSelect()" id="valorDia">
+    <div onmouseenter="valorEnter()" onmouseout="exitSelect()" onclick="valorShow()" id="valorDia">
       <div class="information" onmouseenter="valorEnter()">
         <p class="informationp" onmouseenter="valorEnter()">Todo o Trabalhador gostaria de saber quanto cobrar por um determinado serviço, já deduzindo o valor exato do imposto de Renda. <br>
-        Com este simulador, você pode preencher o valor líquido que gostaria de receber diariamente por um serviço, e ele calcula para você o valor bruto a cobrar do seu cliente.</p>
+        Com este simulador, você pode preencher o valor líquido que gostaria de receber diariamente por um serviço, e ele calcula para você o valor bruto a cobrar do seu cliente. <br>
+        <a>clique para acessar</a>
+        </p>
       </div>
     </div>
 
-    <div onmouseenter="fgtsEnter()" onmouseout="exitSelect()" id="fgts">
+    <div onmouseenter="fgtsEnter()" onmouseout="exitSelect()" onclick="fgtsShow()" id="fgts">
       <div class="information2" onmouseenter="fgtsEnter()">
         <p class="information2p" onmouseenter="fgtsEnter()">A sigla FGTS significa Fundo de Garantia de Tempo de Serviço. É uma conta aberta no momento da admissão e que está vinculada ao contrato de trabalho. <br>
-        Aqui você pode simular o valor a ser depositado mensalmente nesta conta, de acordo com o salário informado.</p>
+        Aqui você pode simular o valor a ser depositado mensalmente nesta conta, de acordo com o salário informado. <br>
+        <a>clique para acessar</a>
+        </p>
       </div>
     </div>
 
-    <div onmouseenter="inssEnter()" onmouseout="exitSelect()" id="inss">
+    <div onmouseenter="inssEnter()" onmouseout="exitSelect()" onclick="inssShow()" id="inss">
       <div class="information3" onmouseenter="inssEnter()">
         <p class="information3p" onmouseenter="inssEnter()">A sigla INSS refere-se à Instituto Nacional de Seguro Social. Esta contribuição se refere ao fundo de aposentadoria,pensão e afastamento do trabalhador. <br>
-        Aqui você pode simular o valor de dedução mensal desta contribuição, de acordo com o salário informado.</p>
+        Aqui você pode simular o valor de dedução mensal desta contribuição, de acordo com o salário informado. <br>
+        <a>clique para acessar</a>
+        </p>
       </div>
     </div>
 
-    <div onmouseenter="completoEnter()" onmouseout="exitSelect()" id="completo">
+    <div onmouseenter="completoEnter()" onmouseout="exitSelect()" onclick="fopagShow()" id="completo">
       <div class="information4" onmouseenter="completoEnter()">
         <p class="information4p">Folha de pagamento:<br>
-        Aqui você poderá inserir o valor bruto do seu salário e verificar todos os descontos aplicados em uma folha de pagamento</p>
+        Aqui você poderá inserir o valor bruto do seu salário e verificar todos os descontos aplicados em uma folha de pagamento <br>
+        <a>clique para acessar</a>  
+        </p>
       </div>
     </div>
   </section>
@@ -151,6 +159,8 @@
         <output class="amountInss"></output>
       </p>
     </div>
+
+    <div id="calc-fopag"></div>
     
   </div>
 

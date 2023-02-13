@@ -242,3 +242,64 @@ function clearFgts(){
   fgts.focus()
   valor.innerText = ""
 }
+
+function valorShow(){
+  let principal = document.querySelector('#principal')
+  let formulario = document.querySelector('#formulario')
+  let valor = document.querySelector('#calc-rs-dia')
+
+  principal.style.display = "none"
+  formulario.style.display = 'block'
+  valor.style.display = 'block'
+
+}
+
+function fgtsShow(){
+  let principal = document.querySelector('#principal')
+  let formulario = document.querySelector('#formulario')
+  let fgts = document.querySelector('#calc-fgts')
+
+  principal.style.display = "none"
+  formulario.style.display = 'block'
+  fgts.style.display = 'block'
+}
+
+function inssShow(){
+  let principal = document.querySelector('#principal')
+  let formulario = document.querySelector('#formulario')
+  let inss = document.querySelector('#calc-inss')
+
+  principal.style.display = "none"
+  formulario.style.display = 'block'
+  inss.style.display = 'block'
+  
+}
+
+function fopagShow(){
+  let principal = document.querySelector('#principal')
+  let formulario = document.querySelector('#formulario')
+  let fopag = document.querySelector('#calc-fopag')
+
+  principal.style.display = "none"
+  formulario.style.display = 'block'
+  fopag.style.display = 'block'
+}
+
+
+function backShow(){
+  let principal = document.querySelector('#principal')
+  let formulario = document.querySelector('#formulario')
+  let valor = document.querySelector('#calc-rs-dia')
+  let fgts = document.querySelector('#calc-fgts')
+  let inss = document.querySelector('#calc-inss')
+  let fopag = document.querySelector('#calc-fopag')
+
+  principal.style.display = "grid"
+  formulario.style.display = 'none'
+  
+  valor.style.display = 'none'
+  fgts.style.display = 'none'
+  inss.style.display = 'none'
+  fopag.style.display = 'none'
+
+}
