@@ -10,6 +10,7 @@ function valorEnter(){
   inss.style.opacity = "10%"
   completo.style.opacity = "10%"
   information.style.display = "block"
+  information.style.border = "0.5px solid black"
   information.style.width = "200px"
   information.style.transition = "width 2s ease"
   informationp.style.display = "block"
@@ -28,6 +29,7 @@ function fgtsEnter(){
   inss.style.opacity = "10%"
   completo.style.opacity = "10%"
   information2.style.display = "block"
+  information2.style.border = "0.5px solid black"
   information2.style.width = "200px"
   information2.style.transition = "width 2s ease"
   information2p.style.display = "block"
@@ -45,6 +47,7 @@ function inssEnter(){
   fgts.style.opacity = "10%"
   completo.style.opacity = "10%"
   information3.style.display = "block"
+  information3.style.border = "0.5px solid black"
   information3.style.width = "200px"
   information3.style.transition = "width 2s ease"
   information3p.style.display = "block"
@@ -63,6 +66,7 @@ function completoEnter(){
   inss.style.opacity = "10%"
 
   information4.style.display = "block"
+  information4.style.border = "0.5px solid black"
   information4.style.width = "200px"
   information4.style.transition = "width 2s ease"
   information4p.style.display = "block"
@@ -73,7 +77,7 @@ function exitSelect(){
   let fgts = document.querySelector('#fgts')
   let inss = document.querySelector('#inss')
   let completo = document.querySelector('#completo')
-  let information = document.querySelector('.information')
+  let information = document.querySelector('.information')  
   let informationp = document.querySelector('.informationp')
   let information2 = document.querySelector('.information2')
   let information2p = document.querySelector('.information2p')
@@ -89,16 +93,20 @@ function exitSelect(){
 
   
   information.style.width = "0px"
-  information.style.transition = "width 3s ease"  
+  information.style.transition = "width 3s ease" 
+  information.style.border = "none" 
   informationp.style.display = "none"
   information2.style.width = "0px"
-  information2.style.transition = "width 3s ease"  
+  information2.style.transition = "width 3s ease" 
+  information2.style.border = "none"  
   information2p.style.display = "none"
   information3.style.width = "0px"
-  information3.style.transition = "width 3s ease"  
+  information3.style.transition = "width 3s ease" 
+  information3.style.border = "none"  
   information3p.style.display = "none"
   information4.style.width = "0px"
-  information4.style.transition = "width 3s ease"  
+  information4.style.transition = "width 3s ease"
+  information4.style.border = "none"   
   information4p.style.display = "none"
   
 }
