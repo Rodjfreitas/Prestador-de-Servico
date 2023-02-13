@@ -152,7 +152,7 @@ output{
 
 
 #formulario,#calc-rs-dia,
-#calc-fgts,#calc-inss{
+#calc-fgts,#calc-inss,#calc-fopag{
   display: none;
 }
 
