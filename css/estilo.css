@@ -91,7 +91,6 @@ nav li:hover{
 
 #formulario{
   background-color: white;
-  border: 1px solid black;
   margin: 20px 40px;
 }
 
@@ -151,12 +150,14 @@ output{
 }
 
 
-#formulario,#calc-rs-dia,
-#calc-fgts,#calc-inss,#calc-fopag{
+#calc-rs-dia,
+#calc-fgts,#calc-inss{
   display: none;
 }
 
+#calc-fopag,#formulario{
 
+}
 
 
 

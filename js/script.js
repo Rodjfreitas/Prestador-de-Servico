@@ -111,6 +111,12 @@ function exitSelect(){
   
 }
 
+function calcFopag(){
+  //calculo do inss
+   
+    
+}
+
 function calcAmount(){
   let amount = document.querySelector('#amount')
   let taxAmount = document.querySelector('.taxAmount')
@@ -242,6 +248,8 @@ function clearFgts(){
   fgts.focus()
   valor.innerText = ""
 }
+
+
 
 function valorShow(){
   let principal = document.querySelector('#principal')
