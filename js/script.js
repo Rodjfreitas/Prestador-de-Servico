@@ -111,11 +111,6 @@ function exitSelect(){
   
 }
 
-function calcFopag(){
-  //calculo do inss
-   
-    
-}
 
 function calcAmount(){
   let amount = document.querySelector('#amount')
@@ -310,4 +305,64 @@ function backShow(){
   inss.style.display = 'none'
   fopag.style.display = 'none'
 
+}
+
+
+
+function calcFopag(){
+  let salario = document.querySelector('#salario')
+  let taxInss = document.querySelector('.taxInss')
+  let amountInss = document.querySelector('.amountInss')
+  let faixas = [1302, 2571.29, 3856.94, 7507.49]
+  let faixa1;
+  let faixa2;
+  let faixa3;
+  let faixa4;
+  let total;
+
+  if(salario.value.length = 0){
+    alert('[ERRO]: Preencha um valor para salário.')
+  }else{
+    if(salario.value <= faixas[0]){
+      taxInss.innerText = "7,5 %"
+      taxInss.style.color = "red"
+      faixa1 = `${Number(faixas[0] * 0.075)}`
+      amountInss.innerText = `R$ ${Number(faixa1).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[1]){
+      taxInss.innerText = "9 %"
+      taxInss.style.color = "red"
+      faixa1 = `${faixas[0] * 0.075}`
+      faixa2 = `${(salario.value - faixas[0])* 0.09}`      
+      total = Number(faixa1) + Number(faixa2)
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[2]){
+      taxInss.innerText = "12 %"
+      taxInss.style.color = "red"
+      faixa1 = `${faixas[0] * 0.075}`
+      faixa2 = `${(faixas[1] - faixas[0])* 0.09}`
+      faixa3 = `${(salario.value - faixas[1])* 0.12}`
+      total = Number(faixa1) + Number(faixa2) + Number(faixa3)
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }
+    else if(salario.value <= faixas[3]){
+      taxInss.innerText = "14 %"
+      taxInss.style.color = "red"
+      faixa1 = `${faixas[0] * 0.075}`
+      faixa2 = `${(faixas[1] - faixas[0])* 0.09}`
+      faixa3 = `${(faixas[2] - faixas[1])* 0.12}`
+      faixa4 = `${(salario.value - faixas[2])* 0.14}`
+      total = Number(faixa1) + Number(faixa2) + Number(faixa3) + Number(faixa4)
+      amountInss.innerText = `R$ ${Number(total).toFixed(2)}`
+    }else{
+      taxInss.innerText = " Não se enquadra"
+      taxInss.style.color = "red"
+      amountInss.innerText = "R$ --"
+    }
+  }
+
+  console.log(taxInss.value)
+  console.log(amountInss.value)
+    
 }
